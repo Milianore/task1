@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.add-btn {
+    background-color: rgb(47, 146, 69);
+    padding: 15px 20px;
+    border: 0;
+    color: white;
+    border-radius: 5px;
+}
+.add-btn:hover {
+    background-color: rgb(32, 95, 46);
+}
+.filter-btn {
+    background-color: #c96c15;
+    padding: 15px 20px;
+    border: 0;
+    color: white;
+    border-radius: 5px;
+}
+.filter-btn:hover {
+    background-color: #914f12;
+}
+li {
+    width: 160px;
+}
