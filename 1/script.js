@@ -1,6 +1,6 @@
 const list = []
 const booklist = document.querySelector(".booklist")
-
+let activeBtn
 document.querySelector(".add-btn").addEventListener("click", () => {
     let book = prompt("Введите название книги")
     if (book) {
@@ -17,9 +17,13 @@ document.querySelector(".add-btn").addEventListener("click", () => {
 )
 
 document.querySelector(".find-btn").addEventListener("click", () => {
+    if (activeBtn) {
+        activeBtn.style.backgroundColor = ""
+    }
     let book = prompt("Введите название книги")
     if (list.includes(book)) {
-        booklist.children[list.indexOf(book)].style.backgroundColor = "yellow"
+        activeBtn = booklist.children[list.indexOf(book)]
+        activeBtn.style.backgroundColor = "yellow"
     }
     else {
         alert("Книга не найдена!")
